@@ -1,0 +1,337 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Tipperx &mdash; Testimonies</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/brand/style.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/Site/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Site/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Site/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Site/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Site/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Site/aos.css' %}">
+    
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'css/Site/style.css' %}">
+
+     <style>
+      .banner {
+  background-image: linear-gradient(
+      rgba(9, 91, 97, 0.75),
+      rgba(11, 40, 59, 0.75)
+    ),
+    url("{% static 'images/hero_bg.jpg' %}");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+    </style>
+
+  </head>
+
+  <body>
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+      <header class="site-navbar light site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3">
+              <div class="site-logo">
+                <a href="{% url 'home' %}"><strong>Tripperx</strong></a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                  <li><a href="{% url 'blog_index' %}" class="nav-link">Tutorials</a></li>
+                  <li class="active"><a href="{% url 'testimonials' %}" class="nav-link">Testimonials</a></li>
+                  <li><a href="{% url 'blog-home' %}" class="nav-link">Blog</a></li>
+                  <li><a href="{% url 'about' %}" class="nav-link">About</a></li>
+                  <li><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </header>
+
+      
+      <div class="site-section-cover overlay">
+        <div class="banner">
+        
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10 text-center">
+              <h1><strong>Testimonials</strong></h1>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      
+      
+
+      <div class="site-section bg-light">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_1.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Mike Fisher</span>
+                  <span>Owner, Ford</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_2.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Jean Stanley</span>
+                  <span>Traveler</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_3.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Katie Rose</span>
+                  <span >Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_4.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Mike Fisher</span>
+                  <span>Owner, Ford</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_2.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Jean Stanley</span>
+                  <span>Traveler</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_3.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Katie Rose</span>
+                  <span >Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_1.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Mike Fisher</span>
+                  <span>Owner, Ford</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_2.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Jean Stanley</span>
+                  <span>Traveler</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-2">
+              <blockquote class="mb-4">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              </blockquote>
+              <div class="d-flex v-card align-items-center">
+                <img src="{% static 'images/Site/person_3.jpg' %}" alt="Image" class="img-fluid mr-3">
+                <div class="author-name">
+                  <span class="d-block">Katie Rose</span>
+                  <span >Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-primary py-5 cta">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-4 mb-md-0">
+            <h2 class="mb-0 text-white">What are you waiting for?</h2>
+            <p class="mb-0 opa-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+          </div>
+          <div class="col-lg-5 text-md-right">
+            <a href="#" class="btn btn-primary btn-white">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h2 class="footer-heading mb-4">About Us</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 ml-auto">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Quick Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Resources</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Support</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Company</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+           
+
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="{% static 'js/Site/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/Site/popper.min.js' %}"></script>
+    <script src="{% static 'js/Site/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/Site/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/Site/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/Site/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/Site/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/Site/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'js/Site/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/Site/bootstrap-datepicker.min.js' %}"></script>
+    <script src="{% static 'js/Site/aos.js' %}"></script>
+    
+    <script src="{% static 'js/Site/main.js' %}"></script>
+
+  </body>
+
+</html>
+

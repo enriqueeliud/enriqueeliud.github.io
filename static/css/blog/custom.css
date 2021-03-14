@@ -1,0 +1,38 @@
+
+ * {
+      font-family: 'Dancing Script', cursive;
+    }
+
+.topnav a:hover {
+    border-bottom: 3px solid #E100FF;
+   
+	
+}
+
+.bg-ui{
+	background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.font-color-menu{
+	color: #fff;
+}
+.btn-primary {
+  font-family: Raleway-SemiBold;
+  font-size: 13px;
+  color: rgba(58, 133, 191, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(58, 133, 191, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-outline-warning
+{
+	border-radius:50px;
+	color: #fff;
+}
